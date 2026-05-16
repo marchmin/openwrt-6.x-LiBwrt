@@ -24,7 +24,7 @@ define Device/cmcc_mr3000d-ci
 	$(call Device/UbiFit)
 	DEVICE_VENDOR := CMCC
 	DEVICE_MODEL := MR3000D-CI
-	DEVICE_DTS_CONFIG := config@mp03.3-m1
+	DEVICE_DTS_CONFIG := config@mp03.3-v1
 	SOC := ipq5018
 	BLOCKSIZE := 128k
 	PAGESIZE := 2048
