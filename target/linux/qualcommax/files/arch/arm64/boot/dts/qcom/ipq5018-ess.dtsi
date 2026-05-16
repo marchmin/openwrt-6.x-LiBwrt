@@ -83,7 +83,7 @@
 		};
 	};
 
-	dp2: dp2 {
+	dp1: dp1 {
 		device_type = "network";
 		compatible = "qcom,nss-dp";
 		qcom,id = <1>;
@@ -101,26 +101,6 @@
 		status = "disabled";
 	};
 
-		dp1: dp1 {
-			device_type = "network";
-			compatible = "qcom,nss-dp";
-			clocks = <&gcc GCC_SNOC_GMAC1_AXI_CLK>;
-			clock-names = "nss-snoc-gmac-axi-clk";
-			qcom,id = <2>;
-			reg = <0x39D00000 0x10000>;
-			interrupts = <GIC_SPI 109 IRQ_TYPE_LEVEL_HIGH>;
-			qcom,mactype = <2>;
-			local-mac-address = [000000000000];
-			phy-mode = "sgmii";
-			qcom,rx-page-mode = <0>;
-
-			fixed-link {
-				speed = <1000>;
-				full-duplex;
-			};
-		};
-
-#if 0
 	dp2: dp2 {
 		device_type = "network";
 		compatible = "qcom,nss-dp";
@@ -137,5 +117,4 @@
 		phy-mode = "sgmii";
 		status = "disabled";
 	};
-#endif
 };
