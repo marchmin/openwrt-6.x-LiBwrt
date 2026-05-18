@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-/ {
+ {
 	nss_dummy_reg: nss-regulator {
 		compatible = "regulator-fixed";
 		regulator-name = "nss-reg";
